@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartSpend-An Expense Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Poppins:wght@400;700&family=Raleway:wght@800&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Kanit:wght@600&family=Poppins:wght@400;700&family=Raleway:wght@800&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+
+
+.banner{
+    background-color: lightseagreen;
+    height: 34vh;
+    max-width: auto;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+
+}
+.text-flex{
+   
+    text-align: center;
+    padding: 150px;
+    color: whitesmoke;
+    font-size: 50px;
+    font-family: Raleway,sans-serif;
+    
+}
+.intro{
+    text-align: center;
+    width: 20vw;
+    height: 70vh;
+    font-family: Rajdhani,sans-serif;
+    font-size: 30px;
+    
+}
+#heading{
+
+  
+  font-family: Raleway;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+ padding: 62px;
+}
+  
+  
+
+  p{
+    top: -2px;
+    margin: 10px;
+  }
+
+  .flex-container{
+    margin: 85px;
+    display: flex;
+    justify-content: space-between;
+    height: 45vh;
+    align-items: center;
+  }
+  
+  .box {
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    color: navy;
+   
+    line-height: 60px;
+    font-family:  Rajdhani,sans-serif;
+    font-size:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  
+
+   .box2 button{
+    padding: 20px;
+    margin: 30px;
+    bottom: 10px;
+    border: none;
+    background-color: navy;
+    color: white;
+    border-radius: 20px;
+   }
+
+   .box2 B1{
+    width: 70px;
+    height: 50px;
+   }
+
+   .box2 B2{
+    width:70px;
+    height: 50px;
+   }
+
+
+   a{
+    color: white;
+    font-family: Rajdhani,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+   }
+
+
+   footer {
+    background-color: lightseagreen;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .fa-fa-twitter:hover{
+    color: skyblue;
+  }
+  .footer-col {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col p,
+  .footer-col ul {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col ul li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  .social-links {
+    display: flex;
+  }
+  
+  .social-links li {
+    margin-right: 10px;
+  }
+  
+  .social-links a {
+    color: #fff;
+    font-size: 20px;
+  }
+
+
+ button:hover{
+  
+   opacity: 0.8;
+ }
+  
+ .box2 b3{
+  margin: 10px;
+  padding: 20px;
+ }
+
+ /* @media(max-width:790px){
+   .box1 > p{
+    font-size: 36px;
+  line-height: 32px;
+  width: 28vw;
+  margin: 5px;
+  
+  height: 348px;
+}
+  
+ }
+
+ @media(max-width:600px){
+  .box1 > p{
+    font-size: 24px;
+    line-height: 33px;
+  } 
+
+  #heading{
+    font-size: 50px;
+    display: block;
+    position: relative;
+    padding: 74px;
+    margin: 0px;
+
+  }
+
+  .box2 {
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+  }
+ }
+
+@media(max-width: 350px){
+.flex-container{
+  max-width: auto;
+  margin: 47px;
+}
+  .box1 > p{
+    font-size: 16px;
+line-height: 15px;
+width: 68px;
+margin: 5px;
+padding: 4px;
+  } 
+
+#heading{
+  font-size: 36px;
+  padding:57px
+}
+.box2 > button{
+  width: 93px;
+  height: 6px;
+}
+
+.box2 > button > a{
+  display: flex;
+align-items: center;
+justify-content: center;
+margin-top: -11px;
+font-size: 16px;
+}
+.box2>button>.B2{
+  height: 10px;
+}
+
+}
+
+@media(max-width: 520px){
+
+  .box1 > p{
+    font-size: 21px;
+line-height: 15px;
+width: 68px;
+margin: 5px;
+padding: 4px;
+  } 
+  .box2 > button > a{
+  display: flex;
+align-items: center;
+justify-content: center;
+margin-top: -11px;
+font-size: 16px;
+}
+.box2>button>.B2{
+  height: 10px;
+}
+}
+@media(min-width: 790px) {
+  .box1 > p{
+    font-size: 36px;
+line-height: 32px;
+width: 266px;
+margin: 5px;
+padding: 31px;
+height: 348px;
+  } 
+}
+@media(max-width:903px){
+  .box1 > p{
+    font-size: 21px;
+line-height: 15px;
+width: 68px;
+margin: 5px;
+padding: 4px;
+  } 
+}
+@media(max-width: 465px){
+  .box1 > p{
+    font-size: 21px;
+line-height: 15px;
+width: 68px;
+margin: 5px;
+padding: 4px;
+  } 
+
+#heading{
+  margin:0px;
+  padding: 33px;
+}
+
+}
+@media(max-width: 300px){
+
+/* .whole{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: auto;
+
+} */
+/* .box{
+  height: 350px;
+  display: flex;
+}
+ .flex-container{
+  display: flex;
+  flex-wrap: wrap;
+} 
+ .box2{
+  height: 150px;
+}
+  .box1 > p{
+    font-size: 26px;
+line-height: 22px;
+width: 130px;
+margin: -30px;
+padding: 31px;
+height: 348px;
+  } 
+  .box2{
+    width: 127px;
+  } 
+
+
+}  */
+
+@media screen and (min-width: 100px) and (max-width: 300px){
+  .flex-container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box{
+    width: 47vw;
+position: relative;
+top: -24vh;
+display: flex;
+flex-direction: column;
+bottom: 25vh;
+background-color: inherit;
+  }
+  .box2> button{
+    width: 23vw;
+display: flex;
+justify-content: center;
+  }
+
+   .b1{
+    position:relative;
+    top:50px;
+  }
+  #mainp{
+    height: 50vh;
+position: relative;
+right: -21vw;
+width: 82vw;
+line-height: 4vh;
+font-size: 1rem;
+top: 20vh;
+}
+#heading{
+  font-size: 13vw;
+  padding: 12vh;
+  position: relative;
+  top: 73px;
+  left: -3px;
+}
+
+}
+
+
+
+
+
+@media screen and (min-width: 300px) and (max-width: 550px){
+  .flex-container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box{
+    width: 47vw;
+position: relative;
+top: -24vh;
+display: flex;
+flex-direction: column;
+bottom: 25vh;
+background-color: inherit;
+  }
+  #mainp{
+    height: 50vh;
+
+position: relative;
+right: -21vw;
+width: 82vw;
+line-height: 4vh;
+font-size: 1.5rem;
+top:14vh;
+}
+#heading{
+  font-size: 15vw;
+padding: 14vh;
+}
+
+}
+
+@media screen and (min-width: 550px) and (max-width: 905px) {
+#mainp{
+  position: relative;
+top: 13px;
+width: 46vw;
+line-height: 54px;
+font-size: 1.5rem;
+
+}
+
+
+}
+
+
+
+</style>
+</head>
+<body>
+   
+    <div class="banner">
+       
+        
+        <div id="heading"> 
+           
+            SmartSpend
+            
+
+            </div>
+       
+            
+
+    </div>
+   <!-- //adding new div -->
+
+   <div class="whole">
+    <div class="flex-container">
+        
+        <div class="box box1">
+            <p id="mainp">
+                "Welcome to our expense tracker, the perfect tool to help you manage your expenses and stay on top of your budget. Say goodbye to financial stress and hello to financial freedom"
+                </p>
+        </div>
+        <div class="box box2">
+            <button class="b1"><a href="/login">
+                LOGIN
+            </a> </button>
+
+            <BUTTON class="B2"> <a href="/register">
+                SIGN-UP
+            </a></BUTTON>
+
+            <!-- <button class="b3">
+                <a href="/secret">
+                    Access Directly
+                </a>
+            </button> -->
+        </div>
+      </div>
+
+      <footer>
+        <div class="container">
+            <div class="footer-col">
+                <h3>About Me</h3>
+                <p>
+
+                    I committed to providing my users with a secure and user-friendly platform that makes it easy to manage their finances. My website is designed to be simple and intuitive, even for those who have little to no experience with financial management.<br>
+                    
+                    Thank you for choosing my expense tracker website. I look forward to helping you take control of your finances and achieve your financial goals.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Me</h3>
+                <ul>
+                    
+                    <li>Phone: 9646420343</li>
+                    <li>Email: vigkrishna@yahoo.com</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Me</h3>
+                <ul class="social-links">
+                    
+                    <li><a href="https://twitter.com/KrishnaVig5"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/vigkrishna/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/krishna-vig-300304kv/"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+  </div>
+    <script src="https://kit.fontawesome.com/9973e620b6.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!-- <h1>login</h1>
+  
+<form action="/login" method="POST">
+    <input type="text" name="username"
+        placeholder="username">
+    <input type="password" name="password" 
+        placeholder="password">
+    <button>login</button>
+</form>
+  
+<h1>This is home page</h1>
+  
+<li><a href="/register">Sign up!!</a></li>
+<li><a href="/login">Login</a></li>
+<li><a href="/logout">Logout</a></li>  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <!-- <link rel="stylesheet" href="loginpage.css"> -->
+</head>
+<style>
+    .wholebody{
+    background-color: lightseagreen;
+    width: 900px;
+    border-radius: 40px;
+    
+
+}
+
+
+
+body {
+	font-family: Arial, sans-serif;
+	/* background-image: url("https://static.vecteezy.com/system/resources/previews/003/232/889/large_2x/light-blue-green-polygon-abstract-background-vector.jpg");
+   */ margin: 0;padding: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 40px;
+	box-sizing: border-box;
+    border-radius: 30px;
+}
+
+form {
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 0;
+    font-family:'Times New Roman', Times, serif;
+	color: white;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+input[type="submit"] {
+	background-color: navy;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	margin-top: 10px;
+}
+button{
+    border-radius: 10px;
+	align-items: center;
+	width: 73px;
+	height: 35px;
+	color: white;
+	background-color: lightseagreen;
+
+}
+@media screen and (min-width: 100px) and (max-width: 300px){
+.wholebody{
+	width:100%;
+	background-color: white;
+}
+.container{
+	position: relative;
+top: 22vh;
+}
+form>h2{
+	color: lightseagreen;
+}
+
+
+
+
+
+
+}
+@media screen and (min-width: 300px) and (max-width: 2000px){
+.wholebody{
+	width:100%;
+	background-color: lightseagreen;
+	height:100vh;
+	border-radius: 175px;
+}
+.container{
+	position: relative;
+top: 22vh;
+}
+form>h2{
+	color: lightseagreen;
+}
+
+
+
+
+
+
+}
+
+
+
+</style>
+<body>
+    <div class="wholebody">
+    <div class="container">
+		<!-- <form>
+			<h2>Login</h2> -->
+			<!-- <label for="email">E-mail</label>
+			<input type="text" id="email" name="email" required>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+			<input type="submit" value="Login">
+		</form> -->
+        <!-- <h2>Login</h2> -->
+        <form action="/login" method="POST">
+			<h2>Login</h2>
+            <input type="text" name="username"
+                placeholder="username">
+            <input type="password" name="password" 
+                placeholder="password">
+            <button type="submit">login</button>
+        </form>
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>
